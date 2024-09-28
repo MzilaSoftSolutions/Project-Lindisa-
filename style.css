@@ -1,0 +1,454 @@
+:root {
+    --stone: #D3CEC4;
+    --pecan: #A1724C;
+    --powder-blue: #b6d0e2;
+}
+/* Global Styles */
+body {
+    overflow-x: hidden;
+    padding: 0px;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #d3cec4; /* Stone color */
+    color: #333;
+    line-height: 1.6;
+    transition: background-color 0.5s ease;
+}
+h3,p{
+    font-family: Brush Script MT, Brush Script Std, cursive;
+}
+
+
+a {
+    text-decoration: none;
+    color: #5c3d2e; /* Pecan color */
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 1rem;
+    background-color: #b6d0e2; /* Powder Blue color */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+header.scrolled {
+    background-color: rgba(182, 208, 226, 0.9); /* Slightly transparent */
+}
+
+.logo {
+    position: static;
+    top: 10px;
+    left: 2px;
+    transition: transform 0.3s ease;
+}
+.logo img {
+    max-width: 75px; /* Adjust the logo size if needed */
+    height: auto;
+    margin-left: 2px;
+    padding-left: 2px;
+    
+}
+.logo:hover {
+    transform: scale(1.1);
+}
+
+nav ul {
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav ul li {
+    font-size: 1rem;
+}
+
+nav ul li a {
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #d49a78; /* Lighter shade of pecan */
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('images/LandisaHome.jpg');
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 5rem 2rem;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    transition: background 0.5s ease;
+}
+
+.hero:hover::before {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    animation: fadeIn 1s ease-in-out 0.5s;
+}
+
+.hero .btn {
+    background-color: #5c3d2e; /* Pecan color */
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.hero .btn:hover {
+    transform: scale(1.1);
+}
+
+/* Featured Products */
+.featured-products {
+    padding: 3rem 2rem;
+    background-color: #f7f5f2;
+    text-align: center;
+}
+
+.featured-products h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.products-grid {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.product img:hover {
+    transform: scale(1.05);
+}
+
+.product p {
+    font-size: 1.2rem;
+    margin: 1rem 0 0.5rem;
+}
+
+.product span {
+    font-weight: bold;
+}
+
+.add-to-cart {
+    background-color: #5c3d2e; /* Pecan color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #d49a78; /* Lighter shade of pecan */
+    transform: scale(1.05);
+}
+
+/* About Section */
+.about {
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-content img {
+    border-radius: 8px;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+.minenhle img{
+    border: 2px solid white;
+    height: 100%;
+    transition: transform 2s ease;
+}
+
+.about-content img:hover {
+    transform: scale(1.1);
+}
+
+.about-content p {
+    max-width: 600px;
+    font-size: 1.2rem;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: var(--stone); /* Stone background */
+    padding: 2rem 2rem;
+    text-align: center;
+    color: var(--pecan); /* Pecan text color */
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--pecan);
+}
+
+.contact-section p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: var(--pecan);
+}
+
+/* Contact Form */
+.contact-form {
+    max-width: 600px;
+    background-color: #B0D8F2;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 2rem;
+    text-align: left;
+    padding-right: 1.5rem;
+    
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--pecan); /* Pecan border on focus */
+    outline: none;
+}
+
+.submit-btn {
+    background-color: var(--pecan); /* Pecan button color */
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: var(--powder-blue); /* Powder blue on hover */
+    transform: scale(1.05);
+}
+
+
+/* Footer */
+footer {
+    background-color: #5c3d2e; /* Pecan color */
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .social-media {
+    margin-top: 1rem;
+}
+
+footer .social-media a {
+    margin: 0 0.5rem;
+    color: white;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+/* Mobile Styles */
+* {
+    box-sizing: border-box; /* Ensures padding and borders are included in width/height */
+}
+
+body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+@media (max-width: 768px) {
+    /* Header */
+    header {
+        flex-direction: column;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    /* Hero Section */
+    .hero {
+        padding: 3rem 1rem; /* Adjust padding for mobile */
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    /* Featured Products */
+    .featured-products {
+        padding: 2rem 1rem;
+    }
+
+    .products-grid {
+        flex-direction: column; /* Stack products vertically */
+        align-items: center;
+    }
+
+    .product {
+        width: 90%; /* Use percentage width for responsiveness */
+        max-width: 300px; /* Limit max width */
+        margin: 1rem 0; /* Margin for spacing */
+    }
+
+    /* About Section */
+    .about {
+        padding: 2rem 1rem; /* Adjust padding */
+    }
+
+    .about-content {
+        padding: 1rem;
+    }
+
+    .about-content img {
+        width: 150px; /* Fixed size */
+        height: 150px; /* Fixed size */
+    }
+
+    /* Footer */
+    footer {
+        padding: 1rem;
+    }
+
+    footer .footer-content {
+        flex-direction: column;
+    }
+}
+
+/* Extra Small Devices */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .add-to-cart {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .product p {
+        font-size: 1rem;
+    }
+
+    footer .social-media a {
+        margin: 0 0.2rem;
+    }
+}

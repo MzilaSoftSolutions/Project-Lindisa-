@@ -1,0 +1,176 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #d3cec4; /* Stone color */
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #5c3d2e; /* Pecan color */
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #b6d0e2; /* Powder Blue color */
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #5c3d2e; /* Pecan color */
+}
+
+nav ul {
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav ul li {
+    font-size: 1rem;
+}
+
+nav ul li a {
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 5rem 2rem;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+.hero .btn {
+    background-color: #5c3d2e; /* Pecan color */
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+/* Featured Products */
+.featured-products {
+    padding: 3rem 2rem;
+    background-color: #f7f5f2;
+    text-align: center;
+}
+
+.featured-products h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.products-grid {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.product {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product p {
+    font-size: 1.2rem;
+    margin: 1rem 0 0.5rem;
+}
+
+.product span {
+    font-weight: bold;
+}
+
+.add-to-cart {
+    background-color: #5c3d2e; /* Pecan color */
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+/* About Section */
+.about {
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-content img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 1rem;
+}
+
+.about-content p {
+    max-width: 600px;
+    font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+    background-color: #5c3d2e; /* Pecan color */
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .social-media {
+    margin-top: 1rem;
+}
+
+footer .social-media a {
+    margin: 0 0.5rem;
+    color: white;
+}
+
