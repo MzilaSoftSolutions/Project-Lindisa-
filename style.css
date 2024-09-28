@@ -83,7 +83,7 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    background-image: url('images/LandisaHome.jpg');
+    background-image: url('LandisaHome.jpg');
     height: 600px;
     background-size: cover;
     background-position: center;
