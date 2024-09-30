@@ -48,12 +48,12 @@ header.scrolled {
 
 .logo {
     position: static;
-    top: 10px;
+    top: 20px;
     left: 2px;
     transition: transform 0.3s ease;
 }
 .logo img {
-    max-width: 75px; /* Adjust the logo size if needed */
+    max-width: 100px; /* Adjust the logo size if needed */
     height: auto;
     margin-left: 2px;
     padding-left: 2px;
@@ -65,7 +65,7 @@ header.scrolled {
 
 nav ul {
     display: flex;
-    gap: 1.5rem;
+    gap: 0.9rem;
 }
 
 nav ul li {
